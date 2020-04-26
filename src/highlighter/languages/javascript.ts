@@ -1,7 +1,7 @@
 import { ILanguage } from "../highlighter";
 
-export const Javascript: ILanguage = {
-  reservedKeywords: [
+export class Javascript implements ILanguage {
+  public reservedKeywords = [
     "await",
     "break",
     "case",
@@ -45,8 +45,8 @@ export const Javascript: ILanguage = {
     "while",
     "with",
     "yield",
-  ],
-  literals: [
+  ];
+  public literals = [
       "null",
       "true",
       "false"
