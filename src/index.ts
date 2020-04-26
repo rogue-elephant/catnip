@@ -14,7 +14,7 @@ fs.readFile(fileName, (err, data) => {
     getLanguageByExtension(fileExtension as string),
     (keyword: string) => kleur.blue(keyword),
     (literal: string) => kleur.magenta(literal),
-    (stringText: string) => kleur.gray(stringText)
+    (stringText: string) => kleur.yellow(stringText)
   );
   process.stdout.write(language.highlight(text));
 });
